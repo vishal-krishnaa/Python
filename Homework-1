@@ -1,0 +1,26 @@
+import random
+
+rice_price = 45
+sugar_price = 40
+oil_price = 130
+
+rice_quantity = 3
+sugar_quantity = 2.5
+oil_quantity = 1.8
+
+rice_total_price = rice_price * rice_quantity
+sugar_total_price = sugar_price * sugar_quantity
+oil_total_price = oil_price * oil_quantity
+subtotal_price = rice_total_price + sugar_total_price + oil_total_price
+
+delivery_charge = random.randint(5, 10)
+final_bill = subtotal_price + delivery_charge
+
+print("Rice totalprice:", rice_total_price)
+print("Sugar totalprice:", sugar_total_price)
+print("Oil totalprice:", oil_total_price)
+print("Subtotalprice:", subtotal_price)
+print("Delivery charge:", delivery_charge)
+print("Final bill including delivery:", final_bill)
+print("Totalfinal bill as an integer:", int(final_bill))
+print("Totalfinal bill as a string:", str(final_bill))
